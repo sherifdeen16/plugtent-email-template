@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Plugtent</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+            body {
+                margin: 0;
+            }
+            table {
+                border-spacing: 0;
+            }
+            td {
+                padding: 0;
+            }
+            img {
+                border: 0;
+            }
+            .wrapper {
+                width: 100%;
+                table-layout: fixed;
+                background-color: #cef6ff;
+                padding-bottom: 60px;
+            }
+            .main {
+                width: 100%;
+                max-width: 600px;
+                background-color: #fff;
+                font-family: "Inter", sans-serif;
+                color: #000;
+            }
+            .header {
+                background-color: #0b497a;
+                padding: 32px;
+                text-align: center;
+                color: #fff;
+            }
+            .logo-container {
+                text-align: left;
+            }
+            .logo {
+                padding-right: 16px;
+            }
+            .title {
+                color: white;
+                margin: 0;
+            }
+            .tagline {
+                font-size: 14px;
+                color: #fff;
+                line-height: 20px;
+                font-family: Inter, sans-serif;
+                margin: 0;
+            }
+            .content {
+                padding: 32px;
+            }
+            .content h2 {
+                color: #0c0d0f;
+                margin: 0 0 16px;
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 16px;
+                padding: 0 0 16px;
+                line-height: 24px;
+                font-family: Inter, sans-serif;
+                margin: 0;
+            }
+            .button {
+                font-size: 16px;
+                background-color: #0b497a;
+                padding: 12px 20px;
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                font-family: Inter, sans-serif;
+                display: inline-block;
+            }
+            .footer-btn {
+                background-color: #1692f4;
+                padding: 12px 20px;
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                font-family: Inter, sans-serif;
+                display: inline-block;
+                font-size: 14px;
+            }
+            .footer {
+                background-color: #0b497a;
+                padding: 32px;
+                text-align: center;
+                color: white;
+            }
+            .footer p {
+                line-height: 20px;
+                font-size: 14px;
+                font-family: Inter, sans-serif;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="wrapper">
+                <table class="main" width="100%">
+                    <tr>
+                        <td class="header">
+                            <table width="100%">
+                                <tr>
+                                    <td class="logo-container">
+                                        <table>
+                                            <tr>
+                                                <td class="logo">
+                                                    <img width="35" src="./images/logo.png" alt="Plugtent Logo" />
+                                                </td>
+                                                <td>
+                                                    <h2 class="title">Plugtent</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="tagline">Connect, leverage, and sell!</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                    <td align="right">
+                                        <img width="80" src="./images/logo.png" alt="Plugtent Logo" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="content">
+                            <h2>Hoooray! You’re subscribed!</h2>
+                            <p>
+                                Hi {{name}}, <br /><br />
+                                Thank you for subscribing to Plugtent. We are excited to have you on board. <br /><br />
+                                Please click the button below to verify your account. <br />
+                            </p>
+                            <a href="{{link}}" class="button">Verify Account</a>
+                            <p>
+                                <br />
+                                Want to know more? <br />
+                                Stay connected with us via social media for daily updates <br /><br />
+                                Cheers, <br />
+                                Plugtent Team
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer">
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <p>
+                                            This wasn’t you? Click {{unsubscribe}} to unsubscribe or stay subscribed regardless.😉 <br />
+                                            You received this email because you are registered with plug tent <br /><br />
+
+                                            <a class="footer-btn" href="{{website}}">Visit Website</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </body>
+</html>
